@@ -1,6 +1,6 @@
 let currentTime;
 let startTime = 9; //Start time of timer, hour in 24 hour intervals.
-let endTime = 19; //End time of timer, hour in 24 hour intervals.
+let endTime = 17; //End time of timer, hour in 24 hour intervals.
 
 let currentTimeMapped;
 let startTimeMapped;
