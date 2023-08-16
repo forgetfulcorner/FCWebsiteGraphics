@@ -11,7 +11,7 @@ function setup() {
   angleMode(DEGREES);
   
   noStroke();
-  textSize(width * 0.35);
+  textSize(width * 0.40);
   textAlign(CENTER, CENTER);
   textStyle(BOLD);
   
