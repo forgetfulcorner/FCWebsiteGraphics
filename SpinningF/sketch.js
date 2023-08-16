@@ -24,7 +24,7 @@ function draw() {
   translate(height/2, height/2)
   
   fill(themeColor);
-  circle(0, 0, width);
+  circle(0, 0, width*0.98);
   
   spinDir();
   
