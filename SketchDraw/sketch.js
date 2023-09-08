@@ -29,7 +29,7 @@ function draw() {
     noStroke();
     fill('#193EFF')
     textSize(20);
-    text('R G B SPACE', 20, windowHeight - 20)
+    text('R G B C', 20, windowHeight - 20)
     pop();
     
     if (mouseIsPressed) {
@@ -45,7 +45,7 @@ function draw() {
 
 function keyPressed(){
   
-  if (keyCode == '32') {
+  if (keyCode == '67') {
     clear();
   }
   
