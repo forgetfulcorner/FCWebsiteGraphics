@@ -1,19 +1,25 @@
 let drawCount = 0;
 let drawColor;
 
+let canvas;
+
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, windowHeight);
   drawColor = '#FF0000'
   
 }
 
 function draw() {
   
+  canvas.style('z-index', '-10');
+  
   if (drawCount % 2 === 1) {
+    
+    canvas.style('z-index', '10');
   
     console.log('READY SET DRAW');
     
