@@ -1,5 +1,6 @@
 let randH, randS, randB, randTop, randBot;
 let canvas;
+let scaleFactor;
 
 // CREATE TWEAKPANE AND PARAMETERS
 
@@ -34,6 +35,8 @@ function setup() {
   canvas = createCanvas(windowWidth, windowWidth);
   noStroke();
   colorMode(HSB, 255);
+
+  scaleFactor = windowWidth / 400;
   
   btnGenerate.on('click', () => {
     setScene();
@@ -63,9 +66,9 @@ function drawBox() {
     randTop = random(255);
     randBot = random(255);
 
-    boxX = PARAMS.xSize + random(-30,30)
-    boxY = PARAMS.ySize + random(-30,30)
-    boxZ = PARAMS.zSize + random(-30,30)
+    boxX = (PARAMS.xSize + random(-30,30)) * scaleFactor
+    boxY = (PARAMS.ySize + random(-30,30)) * scaleFactor
+    boxZ = (PARAMS.zSize + random(-30,30)) * scaleFactor
 
     // boxX = random(10,80);
     // boxY = random(10,80);
@@ -246,5 +249,6 @@ function setScene() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowWidth)
+  resizeCanvas(windowWidth, windowWidth);
+  scaleFactor = windowWidth/400;
 }
