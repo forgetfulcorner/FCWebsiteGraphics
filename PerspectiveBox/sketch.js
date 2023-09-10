@@ -19,7 +19,7 @@ pane.addInput(PARAMS, 'xSize', { min: 40, max: 150});
 pane.addInput(PARAMS, 'ySize', { min: 40, max: 150});
 pane.addInput(PARAMS, 'zSize', { min: 40, max: 150});
 // pane.addInput(PARAMS, 'variance', { min: 20, max: 100});
-pane.addInput(PARAMS, 'quantity', { min: 0, max: 100});
+pane.addInput(PARAMS, 'quantity', { min: 1, max: 10});
 
 const btnGenerate = pane.addButton({
     title: 'Generate'
